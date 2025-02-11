@@ -8,34 +8,54 @@
 
 <body>
 	<form method="post">
-		<label for="name">Name:</label>
-		<input type="text" required="Yes" id="name" placeholder="Name">
+  <!-- Name Field -->
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Name" required><br><br>
 
-		<label for="email">Email:</label>
-		<input type="Email" required="Yes" id="email" placeholder="Email">
+  <!-- Email Field -->
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Email" required><br><br>
 
-		<label for="gender">Gender:</label>
-		<input type="radio" required="Yes" id="gender_m, gender_f">
+  <!-- Gender Radio Buttons -->
+  <label for="gender_m">Male:</label>
+  <input type="radio" id="gender_m" name="gender" value="male" required>
+  
+  <label for="gender_f">Female:</label>
+  <input type="radio" id="gender_f" name="gender" value="female" required><br><br>
 
-		<label for="cars">Car Brands:</label>
-		<input type="Select" required="Yes" id="cars" placeholder="--Please choose an option--">
+  <!-- Car Brands Select -->
+  <label for="cars">Car Brands:</label>
+  <select id="cars" name="cars" required>
+    <option value="">--Please choose an option--</option>
+    <option value="toyota">Toyota</option>
+    <option value="honda">Honda</option>
+    <option value="bmw">BMW</option>
+  </select><br><br>
 
-		<label for="age">Age:</label>
-		<input type="Number" required="Yes" id="age" placeholder="Age">
+  <!-- Age Field -->
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" placeholder="Age" required><br><br>
 
-		<label for="dob">DOB:</label>
-		<input type="Date" required="Yes" id="dob" 
+  <!-- DOB Field -->
+  <label for="dob">DOB:</label>
+  <input type="date" id="dob" name="dob" required><br><br>
 
-			<label for="tel">Phone Number:</label>
-		<input type="Tel" required="No" id="tel" placeholder="xxx-xxx-xxxx">
+  <!-- Phone Number Field -->
+  <label for="tel">Phone Number:</label>
+  <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx"><br><br>
 
-		<label for="password">Password</label>
-		<input type="password" required="Yes" id="password" placeholder="Password" 
+  <!-- Password Field -->
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Password" required><br><br>
 
-			<label for="tos">I agree to the TOS:</label>
-			<input type="checkbox" required="Yes" id="tos" 
-					<button type="submit">submit</button>
-	</form>
+  <!-- TOS Checkbox -->
+  <label for="tos">I agree to the TOS:</label>
+  <input type="checkbox" id="tos" name="tos" required><br><br>
+
+  <!-- Submit Button -->
+  <button type="submit">Submit</button>
+</form>
+
 	
 	
 	<!-- the entire body must be written by student -->
